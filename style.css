@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE BACKGROUND */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #eef2f3, #d9e4f5);
+    padding: 40px 15px;
+    color: #222;
+}
+
+/* MAIN RESUME CARD */
+.resume {
+    max-width: 900px;
+    background: #ffffff;
+    margin: auto;
+    padding: 40px 45px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* NAME */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+/* DIVIDER */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #2563eb, #9333ea);
+    margin-bottom: 30px;
+}
+
+/* SECTION HEADINGS */
+h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #1e293b;
+    position: relative;
+    padding-left: 12px;
+}
+
+/* LEFT ACCENT BAR */
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    height: 16px;
+    width: 4px;
+    background: #2563eb;
+    border-radius: 5px;
+}
+
+/* TEXT */
+p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+/* LISTS */
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #334155;
+}
+
+/* INLINE LISTS */
+ul.inline {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.inline li {
+    display: inline-block;
+    background: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 6px 8px 0 0;
+    font-size: 14px;
+}
+
+/* HIGHLIGHT IMPORTANT TEXT */
+strong {
+    color: #0f172a;
+}
+
+/* LINK STYLE */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* PRINT FRIENDLY */
+@media print {
+    body {
+        background: #ffffff;
+        padding: 0;
+    }
+
+    .resume {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 25px;
+    }
+
+    ul.inline li {
+        background: none;
+        padding: 0;
+        margin-right: 15px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .resume {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+}
